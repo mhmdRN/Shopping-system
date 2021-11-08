@@ -22,7 +22,7 @@ function CartSummary({products,handleCheckout,success}) {
         amount={stripeTotal}
         image={products.length >0?products[0].product.mediaUrl:""}
         currency="USD"
-        shippingAddress="true"
+        shippingAddress={true}
         billingAddress={true}
         zipCode={false}
         token={handleCheckout}

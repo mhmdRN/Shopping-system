@@ -17,7 +17,7 @@ function Cart({products,user}) {
     const payload={ params:{productId},
                     headers: {Authorization: token}}
     const response=await axios.delete(url,payload) 
-      setCartProducts(response.data)
+    setCartProducts(response.data)
 
   }
   async function handleCheckout(paymentData){
@@ -38,7 +38,7 @@ function Cart({products,user}) {
   return (
     <Segment loading={loading}>
       <CartItemList 
-        handleRemoveFromCart={ handleRemoveFromCart} 
+        handleRemoveFromCart={handleRemoveFromCart} 
         success={success} user={user} products={cartProducts}/>
       <CartSummary products={cartProducts}
         success={success} handleCheckout={handleCheckout}/>
