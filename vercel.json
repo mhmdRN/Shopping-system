@@ -1,6 +1,6 @@
 {
     "name":"react_reserve",
-    "alias":"mhmd_rn-react_reserve.vercel.sh",
+    "alias":"mhmd1xreactreserve.vercel.app",
     "version":2,
     "env":{
         "MONGO_SRV":"mongodb+srv://ReactReserve:ReactReserve@react-reserve.o5yfs.mongodb.net/ReactDB?retryWrites=true&w=majority",

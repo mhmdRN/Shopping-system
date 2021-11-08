@@ -50,7 +50,7 @@ function UserPermission({user}){
       isFirstRun.current=false;
       return;
     }
-    updatePermission()
+    updatePermission();
   },[admin])
   function handleChangePermission(){
     setAdmin(prev=>!prev)

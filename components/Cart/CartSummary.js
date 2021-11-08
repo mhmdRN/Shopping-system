@@ -23,7 +23,7 @@ function CartSummary({products,handleCheckout,success}) {
         image={products.length >0?products[0].product.mediaUrl:""}
         currency="USD"
         shippingAddress="true"
-        billingAddress="true"
+        billingAddress={true}
         zipCode={false}
         token={handleCheckout}
         triggerEvent="onClick"
